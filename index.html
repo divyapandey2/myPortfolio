@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Divya Kumari</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+<header id="header">
+    <div class="links">
+    <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#hireme" class="active">Hire me</a></li>
+        </ul>
+        <ul> 
+            <li><a href="#logo" class="img"><img src="./dklogo.jpg" alt="Divya logo" width="50" height="auto"></a></li>
+            <li class="hideOnMobile"><a href="#home">Home</a></li>
+            <li class="hideOnMobile"><a href="#services">Services</a></li>
+            <li class="hideOnMobile"><a href="#projects">Projects</a></li>
+            <li class="hideOnMobile"><a href="#about">About</a></li>
+            <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+            <li class="hideOnMobile"><a href="#hireme" class="active">Hire me</a></li>
+            <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+    <div class="thick-line"></div>
+       
+</div>
+    <div class="header-content">
+        <div class="container">
+            <div class="column-1">
+                <div class="section-header">
+                    <h1 class="header-title">Divya Kumari</h1><br>
+                    <p class="text-1">
+                        Hello, I'm Divya Kumari. I can design and develop Mobile apps & Websites.<br>
+                        Scroll down to explore more about me.<br>
+                        <button class="btn"><a href="data/divresume.pdf">Download CV</a></button>
+                    </p>
+                    <img class="dimg" src="di.png" width="100" alt="Divya Image">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</header>
+
+<section class="services-section" id="services">
+    <br>
+    <div class="container">
+        <div class="section-header">
+        <h5 class="title-serve">WHAT DO I DO</h5>
+        <hr class="hr">
+        <h2 class="serve">Services</h2>
+        <p class="text">    
+            I am skilled in utilizing all facets of App Development and Web Development.
+            <br><br>
+            With expertise in React-Native and React.js, I can create Mobile Apps with cross-platform compatibilities with Android and IOS both.
+            <br><br>
+            I continually strive to ensure high standards are met and consistency is maintained throughout an entire project.
+        </p>
+        <div class="card-container">
+            <div class="card">
+                <img src="img.jpeg" alt="App Development Image">
+                <div class="card-content">
+                    <h3 class="cardone">APP DEVELOPMENT</h3>
+                    <p class="text">With Excellence in React-Native I can provide cross-platform applications with immense UI experience.
+                        React-Native, Redux, Rest-API, JavaScript, TypeScript, Java, Debugging</p>
+                   <button class="btn"> <a  href="#">Read more</a></button>
+            </div>
+            </div>
+          
+            <div class="card">
+                <img src="img.jpeg" alt="Web Development Image">
+                <div class="card-content">
+                    <h3 class="cardtwo">WEB DEVELOPMENT</h3>
+                    <p class="text">With Excellence in React.Js I can provide Single page applications with immense UI experience.
+                        React.Js, Redux, Rest-API, JavaScript, TypeScript, Debugging, Java HTML, CSS, Bootstrap, etc.</p>
+                    <button class="btn "><a  href="#" >Read more</a></button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+<section class="projects-section" id="projects">
+    <br>
+    <div class="container">
+        <div class="section-header">
+        <h5 class="title-serve">MY WORKS</h5>
+        <hr class="hr">
+        <h2 class="serve">PROJECTS</h2>
+        
+        <div class="button-container">
+            <button class="filter-btn active" data-filter="*">All</button>
+            <button class="filter-btn" data-filter=".webdev"><a href="#p2">Web Development</a></button>
+            <button class="filter-btn" data-filter=".appdev"><a href="#p3">App Development</a></button>
+            <button class="filter-btn" data-filter=".digital"><a href="#p4">Digital Ecosystem</a></button>
+        </div>
+        <br>
+        <div class="grid-container1"> 
+            <div class="gc1">
+            <div class="p2" id="p2"><img src="p1.jpg" alt="project1"></div><br>
+            <div class="p2" id="p2"><img src="p2.jpg" alt="project2"></div><br>
+        </div><div class="gc2"><div class="p3" id="p3"><img src="p3.jpg" alt="project3"></div><br>
+            <div class="p4" id="p4"><img src="p4.jpg" alt="project4"></div></div>
+        </div></div>
+    </div>
+</section>
+<section class="about-section" id="about">
+<br>
+<div class="container">
+    <div class="section-header">
+        <div class="about-section">
+    <h5 class="title-about">WHO AM I</h5>
+    <hr class="hr">
+    <h2 class="aboutme">ABOUT ME</h2>
+    <p class="text">    
+        I am a Mobile App and Frontend Web Developer.<br><br>
+        With Excellence in React.Js and React-Native I can provide cross-platform applications with immense UI experience.<br>
+        Tech Stack: React.js, React-Native, Redux, Rest-API, JavaScript, TypeScript, Java, Debugging.<br><br>
+        I continually strive to ensure high standards are met and consistency is maintained throughout an entire project.<br>
+        Specialties: Web Design / Redesign, Website Designing, Tag HTML, CSS, Web Developer.
+    </p></div>
+    </div>
+</div><br>
+<br>
+</section>
+<section class="contact-section" id="contact">
+   
+    <div class="container">
+        <div class="thick-line"></div>
+        
+            <div class ="contact-box">
+           
+        <h2 class="title-contact">GET IN TOUCH</h2>
+        <hr class="hr">
+        <br>
+        <p class="text-contact">    
+            If you have a project that you want to get started, and you need my help with something or just fancy saying hey, then get in touch.
+        </p>
+        <p class="text-contact">   <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="26"><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg></a>Pune, India</p>
+        <p class="text-contact">   <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="26"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg></a>divyapandey090901@gmail.com</p>
+        <p class="text-contact">   <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="26"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg></a>+91 8002241368</p>
+        
+        <div class="contact-form">
+            <h2 class="title-me">CONTACT ME</h2>
+            <br>
+            <div class="details">
+              
+                <input type="text" id="first-name" class="contact-input" placeholder="First Name">
+            
+                <input type="text" id="last-name" class="contact-input" placeholder="Last Name">
+            </div>
+            <br>
+            <div class="details">
+                
+                <input type="text" id="phone" class="contact-input" placeholder="Phone">
+               
+                <input type="text" id="email" class="contact-input" placeholder="Email">
+                 </div><br>
+
+            <div class="details">
+              
+                <input id="message" class="contact-input-msg" placeholder="Message">
+            </div><br>
+           
+        </div>
+        
+        <button class="btn">Send</button>
+        </div>
+        </div>
+        <div class="thick-line"></div>
+    </div>
+   
+</section>
+
+</main>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="grid-container">
+            <div class="footer-about">
+                <h3 class="title-f">ABOUT</h3>
+                <p class="text">Hello, I'm Divya Kumari, Mobile App and Frontend Web developer.<br> 
+                Scroll down to explore more about me.</p>
+            </div>
+            <div class="footer-links">
+                <h3 class="title-f">Links</h3>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-services">
+                <h3 class="title-f">Services</h3>
+                <ul>
+                    <li><a href="#">App Dev</a></li>
+                    <li><a href="#"> Web Dev</a></li>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">UI</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <div class="copyright">
+                <p class="text">Copyright©2024 All rights reserved | Made by Divya Kumari<br>
+                <span>True Coder</span>
+                </p>
+            </div>
+            <div class="followme-wrap">
+                <h3>Follow me</h3>
+                <hr class="hr">
+                <div class="socialmedia">
+                    <a href="https://www.linkedin.com/in/divya-kumari-b2b755181/"> <i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/divyapandey2"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/DivyaPa20954268" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/pandey_divya_9/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    function showSidebar() {
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.style.display = 'flex';
+    }
+
+    function hideSidebar() {
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.style.display = 'none';
+    }
+    
+
+</script>
+
+</body>
+</html>

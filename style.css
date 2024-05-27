@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: url('ccbg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li {
+  height: 50px;
+}
+
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+  font-size: larger;
+}
+
+nav a:hover {
+  background-color: #f0f0f0;
+}
+
+nav ul li:first-child {
+  font-size: small;
+}
+
+.active {
+  background-color:orange;
+}
+
+.sidebar {
+  position: fixed;
+  top:3;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgb(252, 233, 233); /* Example color */
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content:flex-start;
+}
+
+.sidebar li {
+  width: 100%;
+}
+
+.sidebar a {
+  width: 100%;
+}
+
+.menu-button {
+  display: none;
+}
+.thick-line {
+  width: 100%; /* Adjust width as needed */
+  height: 100px; /* Adjust height to control thickness */
+  background-color:orange; /* Change color as needed */
+  margin-top:10px; /* Center the line horizontally */
+}
+.card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 800px) {
+  .hideOnMobile {
+      display: none;
+  }
+
+  .menu-button {
+      display: block;
+  }
+}
+
+@media (max-width: 400px) {
+  .sidebar {
+      width: 100%;
+  }
+}
+
+.header-title {
+  color: #333; /* Example color */
+  font-size: 36px;
+ 
+}
+
+.text {
+  color: #666; /* Example color */
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin:  auto;
+  padding: 0 20px;
+}
+nav ul li:first-child {
+ 
+  margin-right:auto;
+  margin-left:30px;
+
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* This allows cards to wrap to the next line if there's not enough space */
+}
+
+.card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.card-content p {
+  font-size: 1rem;
+  color: #333;
+}
+.button-container{
+  margin-top:10px;
+}
+.filter-btn{
+  margin-right :10px;
+  padding: 10px ;
+  border-radius :20px;
+}
+.btn{
+  border-radius: 20px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  background-color: orange;
+            color:white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration:dotted;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius:20px;
+
+}
+.section-header{
+  margin-left:100px;
+  display: inline-block; /* Set to inline-block to allow elements to sit next to each other */
+  vertical-align: middle; /* Align vertically to middle */
+  margin-right: 10px;
+}
+.about-section{
+  background: url('dot.jpg');
+}
+.services-section{
+  background: url('dot2.jpg');
+}
+.projects-section{
+  background: url('dot2.jpg');
+}
+.dimg{
+ 
+  width:auto;
+  /* Align vertically to middle */
+
+}
+
+.column-1{
+  margin-top:200px;
+  display:flex
+  
+}
+.contact-section{
+  background-color:orange;
+}
+.contact-box{
+  background-color:white;
+  width: 400px;
+  height: 80%;
+  margin-bottom:40px;
+  border-radius: 30px;
+  margin-left:30px;
+  
+
+  
+}
+@media (min-width: 800px) {
+  .contact-box{
+     width: 800px;
+  }
+
+}
+@media (max-width: 800px) {
+  
+  .title-contact {
+      display:none;
+      
+  }
+  
+  .text-contact {
+    display:none;
+}
+}
+
+.text-contact{
+  margin-left: 30px;
+}
+.title-contact{
+  margin-left: 30px;
+}
+
+.title-me{
+  margin-top: 50px;
+  margin-left: 30px;
+}
+.contact-input{
+  width: 30%;
+  height:auto;
+  font-size:18px;
+  padding: 10px;
+ border-radius:10px ;
+ row-gap:10px;
+ margin-left: 30px;
+}
+.contact-input-msg{
+  width: 50%;
+  height:auto;
+  font-size:18px;
+  padding: 50px;
+ border-radius:10px;
+ margin-left: 30px;
+}
+.footer-container{
+  background-color: black;
+  
+  color: #f0f0f0;
+  padding: 100px;
+
+}
+.grid-container {
+  display: grid;
+    grid-template-rows: 100px 80px 150px; /* Two rows, 100px and 200px in height */
+    grid-template-columns: 1fr 2fr 3fr;  /* Two columns, one with 1 fraction and the other with 2 fractions */
+    grid-gap: 100px; /* Gap between grid items */
+  
+}
+@media screen and (max-width: 768px) {
+  .grid-container {
+      grid-template-columns: 1fr; /* Change to a single column layout on smaller screens */
+  }
+}
+
+.hr{
+  width: 20%;
+  height:auto;
+  margin-left: 10px;
+  
+ 
+}
+.followme-wrap{
+  display:flex;
+
+}
+.socialmedia{
+  margin-left:40px;
+}
+
+.grid-container1{
+  border-radius: 10px;
+}
+.grid-container1{
+ 
+    grid-template-rows: 200px 200px ; /* Two rows, 100px and 200px in height */
+    grid-template-columns: 1fr 1fr ;  /* Two columns, one with 1 fraction and the other with 2 fractions */
+    grid-gap: 50px; /* Gap between grid items */
+  
+}
+@media screen and (max-width: 768px) {
+  .grid-container1{
+      grid-template-columns: 1fr 2fr; /* Change to a single column layout on smaller screens */
+  }
+}
+@media screen and (min-width: 800px) {
+  .grid-container1{
+     display:flex ; /* Change to a single column layout on smaller screens */
+ 
+     grid-template-columns: 1fr 1fr;   }
+}
+/* This will center {the image horizontally */
+
+/*.services-section.container{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+} */
